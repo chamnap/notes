@@ -1,5 +1,5 @@
 # Simplecov
-require_relative 'load_simplecov'
+require_relative 'simplecov_config'
 
 # This file is copied to spec/ when you run 'rails generate rspec:install'
 ENV["RAILS_ENV"] ||= 'test'

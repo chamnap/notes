@@ -1,4 +1,4 @@
-This is my rspec-capybara configuration. It includes factory_girl, simplecov, devise, and omniauth. Remove some if you don't need or make some changes if you like.
+Below are the rspec configuration. It includes factory_girl, simplecov, devise, and omniauth. Remove some if you don't need or make some changes if you like.
 
   1. Install these packages: firefox, qt, webkit, xvfb, libicu48
 
