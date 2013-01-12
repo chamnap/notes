@@ -30,15 +30,16 @@ wget -qO- https://toolbelt.heroku.com/install.sh | sh
 # Asset Precompile
 
 1. Compiling assets locally.
+
     $ RAILS_ENV=production bundle exec rake assets:precompile
     $ git add public/assets
     $ git commit -m "vendor compiled assets"
 
 2. Compiling assets during slug compilation.
-    config.assets.initialize_on_precompile=false
+    `config.assets.initialize_on_precompile=false`
 
 3. Compiling assets during runtime.
-    If the assets:precompile task fails, the output will be displayed and runtime compilation of assets will be enabled.    
+    If the `assets:precompile` task fails, the output will be displayed and runtime compilation of assets will be enabled.    
 
 # Heroku Environment Variables
     $ heroku config:add KEY=value
