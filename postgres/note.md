@@ -20,6 +20,7 @@ Here are the steps to install `postgres` on your ubuntu server. You can checkout
     $ dpkg-reconfigure locales
 
 Create user
+
     $ sudo -u postgres createuser --superuser <$USER>
     $ sudo -u postgres psql
     $ postgres=# \password <$USER>
@@ -28,3 +29,8 @@ Creating rails application with postgres
 
     $ rails new store -d postgresql
     $ rake db:create
+
+Export and import data
+
+    > \copy (SELECT * FROM users) TO /tmp/file.csv CSV DELIMITER ','
+    > COPY users FROM '/tmp/file.csv' DELIMITERS ',' CSV
